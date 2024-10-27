@@ -1,28 +1,39 @@
-.square {
-    width: 200px;  // Size of the square
-    height: 200px;
-    background-color: purple;  // Purple square background
-    position: relative;
-    
-    .circle {
-      width: 150px;  // Size of the circle
-      height: 150px;
-      border-radius: 50%;  // Creates the circle shape
-      background-color: white;
-      position: absolute;
-      top: 50%;  // Centers the circle vertically
-      left: 50%;  // Centers the circle horizontally
-      transform: translate(-50%, -50%);  // Adjusts centering
-  
-      &::before {
-        content: '';
-        position: absolute;
-        width: 50px;  // Adjust size to open the circle
-        height: 150px;
-        background-color: purple;  // Same color as the square to "cut" the left side
-        top: 0;
-        left: -50px;  // Position it to overlap on the left
-      }
-    }
+.shine {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  // border-radius: 0;
+  cursor: pointer;
+}
+
+.shine::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -100%;
+  width: 150%;
+  height: 20%;
+  background: #ffffffb4;
+  transform: rotate(45deg);
+  // animation: shine 10s infinite;
+  pointer-events: none;
+}
+
+.shine:hover::before {
+  animation: shine 10s infinite;
+}
+
+@keyframes shine {
+  0% {
+    top: 100%;
+    left: -100%;
   }
-  
+  10% {
+    top: -100%;
+    left: 100%;
+  }
+  100% {
+    top: -100%;
+    left: 100%;
+  }
+}

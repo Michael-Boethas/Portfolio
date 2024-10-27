@@ -19,15 +19,22 @@ nav span {
 
   @media screen and (min-width: $lg) {
     &:hover {
+      font-weight: bold;
       color: $primary;
     }
   }
 }
 
+.hover--zoom {
+  transition: transform 200ms;
 
+  @media screen and (min-width: $lg) {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
 
-// Background colors ///////////////////////
-
-.bg-cream {
-  background-color: #fdf4ed;
+h2 {
+  color: #636363;
 }
