@@ -61,7 +61,7 @@
 
   @media screen and (min-width: $lg) {
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
   }
 }
@@ -71,7 +71,7 @@
 
   @media screen and (min-width: $lg) {
     &:hover {
-      transform: translateY(-3%);
+      transform: translateY(-3%) scale(1.08);
     }
   }
 }
