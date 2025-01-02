@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Dirt&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Burned&family=Rubik+Dirt&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Frijole&family=Rubik+Burned&family=Rubik+Dirt&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredericka+the+Great&family=Frijole&family=Rubik+Burned&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers');
 
 .font-large {
   font-size: 2rem;
@@ -36,20 +28,38 @@
   }
 }
 
-.font-404 {
-  font-family: "Bangers", serif;
-  font-size: 6rem;
-
-  @media screen and (min-width: $md) {
+.font-error {
+  font-family: 'Bangers', serif;
+  h1 {
     font-size: 8rem;
-  }
 
-  @media screen and (min-width: $lg) {
-    font-size: 10rem;
-  }
+    @media screen and (min-width: $md) {
+      font-size: 10rem;
+    }
 
-  @media screen and (min-width: $xl) {
-    font-size: 12rem;
+    @media screen and (min-width: $lg) {
+      font-size: 12rem;
+    }
+
+    @media screen and (min-width: $xl) {
+      font-size: 14rem;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    transform: translateY(-30px);
+
+    @media screen and (min-width: $md) {
+      font-size: 3rem;
+    }
+
+    @media screen and (min-width: $lg) {
+      font-size: 3.2rem;
+    }
+
+    @media screen and (min-width: $xl) {
+      font-size: 3.4rem;
+    }
   }
 }
 
